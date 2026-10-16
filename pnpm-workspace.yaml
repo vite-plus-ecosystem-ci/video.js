@@ -2,6 +2,9 @@ minimumReleaseAge: 1440
 shellEmulator: true
 trustPolicy: no-downgrade
 trustPolicyExclude:
+  # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
+  - vite-plus
+  - '@voidzero-dev/*'
   - '@netlify/edge-bundler@14.10.3'
   - '@netlify/serverless-functions-api@2.16.0'
   - '@netlify/zip-it-and-ship-it@14.7.1'
@@ -68,6 +71,13 @@ overrides:
   vite@*: 'catalog:'
   vitest@*: 'catalog:'
 minimumReleaseAgeExclude:
+  # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
+  - '@oxc-project/*'
+  - tinybench
+  - yuku-core
+  - yuku-parser
+  - '@yuku-core/*'
+  - '@yuku-toolchain/*'
   - vite-plus
   - '@voidzero-dev/*'
   - oxlint
