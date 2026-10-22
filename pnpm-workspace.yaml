@@ -2,6 +2,9 @@ minimumReleaseAge: 1440
 shellEmulator: true
 trustPolicy: no-downgrade
 trustPolicyExclude:
+  # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
+  - vite-plus
+  - '@voidzero-dev/*'
   - '@netlify/serverless-functions-api@2.24.0'
   - 'chokidar@4.0.3'
   - 'semver@6.3.1'
@@ -66,6 +69,8 @@ overrides:
   vite@*: 'catalog:'
   vitest@*: 'catalog:'
 minimumReleaseAgeExclude:
+  # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
+  - '@oxc-project/*'
   - vite-plus
   - '@voidzero-dev/*'
   - oxlint
