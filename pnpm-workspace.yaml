@@ -53,18 +53,18 @@ allowBuilds:
   'sharp@0.34.5': true
 catalog:
   browserslist: ^4.29.3
-  vite: npm:@voidzero-dev/vite-plus-core@1.1.0
-  vitest: 5.0.3
-  vite-plus: 1.1.0
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.943ee4a9e322a7ad4b1b4113f844cd541a10b159
+  vitest: 5.1.0
+  vite-plus: 0.0.0-commit.943ee4a9e322a7ad4b1b4113f844cd541a10b159
   # One Tailwind for the whole workspace: VJSC compiles CSS output with the same engine that consumers use for Tailwind
   # output, and it relies on unstable design-system APIs, so the version stays exact.
   '@tailwindcss/node': 4.3.3
   '@tailwindcss/vite': 4.3.3
   lightningcss: 1.33.0
   tailwindcss: 4.3.3
-  '@vitest/browser-playwright': 5.0.3
-  '@vitest/coverage-v8': 5.0.3
-  '@vitest/ui': 5.0.3
+  '@vitest/browser-playwright': 5.1.0
+  '@vitest/coverage-v8': 5.1.0
+  '@vitest/ui': 5.1.0
 overrides:
   vite@*: 'catalog:'
   vitest@*: 'catalog:'
