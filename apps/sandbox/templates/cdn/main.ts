@@ -398,8 +398,7 @@ async function render() {
   const skin = html`
     <${skinTag} class="sandbox-video-frame mx-auto max-w-4xl">
       <${mediaTag} ${mediaClassAttr} ${sourceAttr} ${mediaAttrs} playsinline ${crossoriginAttr}>
-        ${skinnedVideo ? renderChapters(getChapters(state.source)) : ''}
-        ${renderStoryboard(storyboard)}
+        ${skinnedVideo ? renderChapters(getChapters(state.source)) : ''} ${renderStoryboard(storyboard)}
       </${mediaTag}>
       ${poster ? html`<img slot="poster" src="${escapeHtml(poster)}" alt="Video poster" crossorigin />` : ''}
     </${skinTag}>
